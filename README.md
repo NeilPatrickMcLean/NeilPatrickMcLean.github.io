@@ -6,24 +6,24 @@
   <meta name="description" content="A personal portfolio webpage."> 
   <meta name="keywords" content="HTML, portfolio, projects, contact">
   <meta name="author" content="Patrick McLean">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
-  <title>My Portfolio</title>
+<title>My Portfolio</title>
 </head>
 
 <body>
   
-  <header>
-    <h1>Welcome to My Webpage</h1>
+<header>
+  <h1>Welcome to My Webpage</h1>
 
-    <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-  </header>
+  <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+</header>
 
 <main>
 
