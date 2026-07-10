@@ -129,10 +129,8 @@ main section:hover {
    width: 25%;
 }
 
-/* Column background colors */
-#projects col.project-name,
-#projects col.project-description, 
-#projects col.project-image {
+/* Project table body colors */
+#projects tbody td {
    background-color: #e8f1ff;
 }
 
@@ -168,12 +166,12 @@ main section:hover {
 }
 
 /* Alternating project rows */
-#projects tbody tr:nth-child(even) {
+#projects tbody tr:nth-child(even) td {
    background-color: #f7f7f7;
 }
 
 /* Project row hover effect */
-#projects tbody tr:hover {
+#projects tbody tr:hover td {
    background-color: #eef4fa;
 }
 
