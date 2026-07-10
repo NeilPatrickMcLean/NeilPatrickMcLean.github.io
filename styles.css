@@ -1,11 +1,20 @@
-/* Test 
+/* Test
 */
 
 body {
-   background: linear-gradient(to top, #808080, #9e9e9e, #bdbebd, #dedede, #ffffff);
+   margin: 0;
+   background: linear-gradient(
+      to top,
+      #808080,
+      #9e9e9e,
+      #bdbebd,
+      #dedede,
+      #ffffff
+   );
    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Page headers */
 header {
    text-align: center;
    font-size: 2em;
@@ -15,10 +24,18 @@ header {
    color: white;
 }
 
+header h1,
+header h2 {
+   margin: 0;
+}
+
+/* Navigation */
 nav ul {
    list-style-type: none;
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
    padding: 0;
 }
 
@@ -27,9 +44,12 @@ nav ul li {
 }
 
 nav ul li a {
+   display: block;
    text-decoration: none;
    color: black;
    padding: 8px 12px;
+   border-radius: 4px;
+   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -37,14 +57,148 @@ nav ul li a:hover {
    color: white;
 }
 
+/* Main content sections */
 section {
    padding: 20px;
-   margin: 15px 0;
+   margin: 15px;
    background-color: white;
    border: 1px solid #ccc;
-   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+main section {
+   transition: transform 0.3s ease;
+}
+
+main section:hover {
+   transform: scale(1.01);
+}
+
+/* Projects section */
+#projects {
+   max-width: 1200px;
+   margin: 15px auto;
+}
+
+#projects > header {
+   margin: -20px -20px 25px;
+   padding: 45px 20px;
+}
+
+#projects > header h2 {
+   font-size: 1.5em;
+}
+
+#projects > p {
+   margin: 0 0 25px;
+   text-align: center;
+   font-size: 1.1em;
+   line-height: 1.5;
+}
+
+/* Project table */
+#projects table {
+   width: 100%;
+   margin-top: 20px;
+   border-collapse: collapse;
+   table-layout: fixed;
+   background-color: white;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Table caption */
+#projects caption {
+   padding: 12px;
+   background-color: #333;
+   color: white;
+   font-size: 1.5em;
+   font-weight: bold;
+   caption-side: top;
+}
+
+/* Column widths */
+#projects col.project-name {
+   width: 22%;
+}
+
+#projects col:nth-child(2) {
+   width: 53%;
+}
+
+#projects col.project-image {
+   width: 25%;
+}
+
+/* Column background colors */
+#projects col.project-name,
+#projects col.project-image {
+   background-color: #e8f1ff;
+}
+
+/* Table borders and spacing */
+#projects th,
+#projects td {
+   border: 1px solid #999;
+   padding: 14px;
+   text-align: left;
+   vertical-align: middle;
+   line-height: 1.5;
+}
+
+/* Table heading */
+#projects thead {
+   background-color: #4a90e2;
+   color: white;
+}
+
+#projects thead th {
+   text-align: center;
+}
+
+/* Project names */
+#projects tbody td:first-child {
+   font-weight: bold;
+   color: #222;
+}
+
+/* Image column */
+#projects tbody td:last-child {
+   text-align: center;
+}
+
+/* Alternating project rows */
+#projects tbody tr:nth-child(even) {
+   background-color: #f7f7f7;
+}
+
+/* Project row hover effect */
+#projects tbody tr:hover {
+   background-color: #eef4fa;
+}
+
+/* Project images */
+#projects td img {
+   display: block;
+   width: 100%;
+   max-width: 220px;
+   height: 130px;
+   margin: 0 auto;
+   object-fit: cover;
+   background-color: #ddd;
+   border: 1px solid #999;
+   border-radius: 5px;
+}
+
+/* Table footer */
+#projects tfoot td {
+   padding: 14px;
+   background-color: #444;
+   color: white;
+   text-align: center;
+   font-style: italic;
+}
+
+/* Page footer */
 footer {
    font-size: 0.8em;
    text-align: center;
@@ -53,69 +207,30 @@ footer {
    padding: 10px;
 }
 
-/* Navigation link hover transition */
-nav a {
-  transition: background-color 0.3s ease;
-}
+/* Responsive table adjustments */
+@media screen and (max-width: 700px) {
+   section {
+      margin: 10px;
+      padding: 15px;
+   }
 
-nav a:hover {
-  background-color: #333;
-}
+   #projects > header {
+      margin: -15px -15px 20px;
+      padding: 30px 15px;
+   }
 
+   #projects table {
+      table-layout: auto;
+   }
 
-/* Main content section zoom hover effect */
-main section {
-  transition: transform 0.3s ease;
-}
+   #projects th,
+   #projects td {
+      padding: 9px;
+      font-size: 0.9em;
+   }
 
-main section:hover {
-  transform: scale(1.02);
-}
-
-
-/* Project table styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-
-/* Table borders and spacing */
-th,
-td {
-  border: 2px solid #333;
-  padding: 12px;
-  text-align: left;
-}
-
-
-/* Table heading styling */
-thead {
-  background-color: #4a90e2;
-  color: white;
-}
-
-
-/* Column background colors */
-.project-name,
-.project-image {
-  background-color: #e8f1ff;
-}
-
-
-/* Table caption styling */
-caption {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-
-/* Image placeholders */
-td img {
-  width: 100px;
-  height: 100px;
-  background-color: #ddd;
-  display: block;
+   #projects td img {
+      min-width: 80px;
+      height: 90px;
+   }
 }
