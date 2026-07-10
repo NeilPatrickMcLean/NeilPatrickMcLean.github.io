@@ -52,3 +52,70 @@ footer {
    color: white;
    padding: 10px;
 }
+
+/* Navigation link hover transition */
+nav a {
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+
+/* Main content section zoom hover effect */
+main section {
+  transition: transform 0.3s ease;
+}
+
+main section:hover {
+  transform: scale(1.02);
+}
+
+
+/* Project table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+/* Table borders and spacing */
+th,
+td {
+  border: 2px solid #333;
+  padding: 12px;
+  text-align: left;
+}
+
+
+/* Table heading styling */
+thead {
+  background-color: #4a90e2;
+  color: white;
+}
+
+
+/* Column background colors */
+.project-name,
+.project-image {
+  background-color: #e8f1ff;
+}
+
+
+/* Table caption styling */
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* Image placeholders */
+td img {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  display: block;
+}
