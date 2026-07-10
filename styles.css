@@ -121,7 +121,7 @@ main section:hover {
    width: 22%;
 }
 
-#projects col:nth-child(2) {
+#projects col.project-description {
    width: 53%;
 }
 
@@ -131,6 +131,7 @@ main section:hover {
 
 /* Column background colors */
 #projects col.project-name,
+#projects col.project-description, 
 #projects col.project-image {
    background-color: #e8f1ff;
 }
@@ -147,7 +148,7 @@ main section:hover {
 
 /* Table heading */
 #projects thead {
-   background-color: #4a90e2;
+   background-color: #D3D3D3;
    color: white;
 }
 
