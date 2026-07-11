@@ -130,8 +130,22 @@ main section:hover {
 }
 
 /* Project table body colors */
-#projects tbody td {
-   background-color: #e8f1ff;
+/* First column */
+#projects tbody td:first-child {
+   background-color: #D3D3D3;
+   font-weight: bold;
+   color: #222;
+}
+
+/* Third column */
+#projects tbody td:last-child {
+   background-color: #D3D3D3;
+   text-align: center;
+}
+
+/* Description column */
+#projects tbody td:nth-child(2) {
+   background-color: #A9A9A9;
 }
 
 /* Table borders and spacing */
@@ -144,9 +158,15 @@ main section:hover {
    line-height: 1.5;
 }
 
-/* Table heading */
-#projects thead {
+/* Default header cells */
+#projects thead th {
    background-color: #D3D3D3;
+   color: white;
+}
+
+/* Description header only */
+#projects thead th:nth-child(2) {
+   background-color: #A9A9A9;
    color: white;
 }
 
@@ -165,14 +185,10 @@ main section:hover {
    text-align: center;
 }
 
-/* Alternating project rows */
-#projects tbody tr:nth-child(even) td {
-   background-color: #f7f7f7;
-}
-
-/* Project row hover effect */
-#projects tbody tr:hover td {
-   background-color: #eef4fa;
+#projects tbody tr:hover td:first-child,
+#projects tbody tr:hover td:nth-child(2),
+#projects tbody tr:hover td:last-child {
+   background-color: white;
 }
 
 /* Project images */
