@@ -115,11 +115,33 @@
 </section>
 
   <section id="contact">
-    <header>
+   <header>
       <h2>Contact</h2>
-    </header>
-    <p>Neil "Patrick" McLean &bull; www.linkedin.com/in/neilpmclean &bull; neil.mclean81@gmail.com &bull; 612-384-8491 </p>
-  </section>
+   </header>
+
+   <p class="contact-info">
+	Neil "Patrick" McLean &bull;
+	www.linkedin.com/in/neilpmclean &bull;
+	neil.mclean81@gmail.com &bull;
+	612-384-8491
+   </p>
+
+   <form id="contact-form" action="#" method="post">
+      <label for="sender-name">Name</label>
+      <input type="text" id="sender-name" name="sender-name" required>
+
+      <label for="sender-email">Email Address</label>
+      <input type="email" id="sender-email" name="sender-email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <input type="submit" value="Submit">
+   </form>
+</section>
 
 </main>
 
@@ -129,5 +151,3 @@
 
 </body>
 </html>
-
-
