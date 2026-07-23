@@ -46,8 +46,8 @@ To set up this project locally on your machine:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/NeilPatrickMcLean/NeilPatrickMcLean.github.io
+cd NeilPatrickMcLean/NeilPatrickMcLean.github.io
 ```
 
 ### Run the Website
@@ -70,6 +70,6 @@ This project is intended for educational purposes only.
 
 **Patrick McLean**
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/neilpatrickmclean
 
-LinkedIn: https://www.linkedin.com/in/yourprofile
+LinkedIn: https://www.linkedin.com/in/neilpmclean
